@@ -21,12 +21,12 @@ sglang_image =(
 TEST_DIR: str = "/sglang/test/srt/"
 TEST_FILE: str = "test_release_memory_occupation"
 TEST_CLASS: str = "TestReleaseMemoryOccupation"
-TEST_NAME: str | None = None #"test_release_and_resume_occupation_with_weights_cpu_backup"
+TEST_NAME: str | None = None # test name e.g. "test_release_and_resume_occupation_with_weights_cpu_backup"
 
 GPU_TYPE = "A10"
 GPU_COUNT = 2
 
-HUGGING_FACE_SECRET_NAME: str = "huggingface-secret-edu"
+HUGGING_FACE_SECRET_NAME: str = "huggingface-secret"
 
 @app.function(
     image=sglang_image,
